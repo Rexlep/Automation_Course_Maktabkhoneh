@@ -1,0 +1,14 @@
+Start
+scan Your Folder
+For ech file;
+    if file INcompelete:
+        move to temp
+    else if project file:
+        move to projects
+    else if media:
+        move to media
+    else:
+        move archive
+
+generate log
+end
