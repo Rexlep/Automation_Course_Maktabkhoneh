@@ -1,4 +1,5 @@
 import os
+import webbrowser
 
 from flask import Flask, render_template, request
 
@@ -38,6 +39,13 @@ def update_service():
     os.system("notepad.exe")
 
     return '<h1>Success script is running now</h1><a href="/">Back to Home</a>'
+
+
+@app.route("/open-url", methods=['POST'])
+def open_url():
+    target = request.form.get('site-url')
+    webbrowser.open(f"https://{target}")
+    return '<h1>Success url is opened</h1><a href="/">Back to Home</a>'
 
 
 if __name__ == "__main__":
