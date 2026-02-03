@@ -1,24 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>Automation Dashboard</title>
+    <style>
+        body { font-family: Arial; margin: 50px; background: #f4f4f4; }
+        .card { background: white; padding: 20px; border-radius: 10px; shadow: 2px 2px 10px #ccc; }
+        .status-up { color: green; font-weight: bold; }
+        .status-down { color: red; font-weight: bold; }
+    </style>
 </head>
 <body>
     <div class="card">
-        <h1>System Service</h1>
+        <h1>System Monitor</h1>
         <hr>
-        <h3>Registered Service</h3>
-
+        <h3>Registered Services:</h3>
         <ul>
             {% for name, status in services.items() %}
                 <li>{{ name }}:
-                    <span class="{{'status-up' if status == 'Online' else 'status-down'}}">
-                        {{status}}
+                    <span class="{{ 'status-up' if status == 'Online' else 'status-down' }}">
+                        {{ status }}
                     </span>
                 </li>
             {% endfor %}
         </ul>
+    </div>
+    <div class="card" style="margin-top: 20px">
+        <h3>Manual Action</h3>
+        <form action="/run-script" method="post">
+            <button type="submit" style="margin: 10px; cursor: pointer;">
+                RunScript
+            </button>
+        </form>
     </div>
 </body>
 </html>
