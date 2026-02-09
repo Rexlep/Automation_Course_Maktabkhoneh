@@ -12,7 +12,7 @@ cursor.execute("""
 """)
 
 try:
-    cursor.execute("INSERT INTO members (username, score) VALUES (?, ?)",("Amirgd", "100"))
+    cursor.execute("INSERT INTO members (username, score) VALUES (?, ?)",("Amir", "180"))
     conn.commit()
 
 except sqlite3.IntegrityError:
