@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Monitor app</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Live Gold Price  Dashboard</h1>
+
+        <table border="1">
+            <tr>
+                <th>Time</th>
+                <th>Price (Toman)</th>
+            </tr>
+            {% for row in history %}
+                <tr>
+                    <td>{{row[2]}}</td>
+                    <td>{{row[1]}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>

@@ -31,7 +31,7 @@ def save_to_db(price):
     conn.close()
 
 
-schedule.every(50).second.do(get_live_price)
+schedule.every(50).seconds.do(get_live_price)
 
 if __name__ == '__main__':
     print("Tracker is running")
