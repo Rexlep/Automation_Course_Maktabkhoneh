@@ -13,7 +13,7 @@ def init_db():
     cursor.execute("""CREATE TABLE IF NOT EXISTS sales_history (
                         product TEXT,
                         price REAL,
-                        date TEXT
+                        date TEXT)
     """)
 
     conn.close()

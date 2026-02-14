@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart reporter</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Smart report system</h1>
+
+        <div class="summery">
+            <strong>{{ "{:,.0f}".format(total) }}</strong>
+        </div>
+
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Toman</th>
+                <th>Date</th>
+            </tr>
+            {% for item in sales %}
+            <tr>
+                <th>{{item[0]}}</th>
+                <th>{{ "{:,.0f}".format(item[1]) }}</th>
+                <th>{{item[2]}}</th>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
