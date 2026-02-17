@@ -1,8 +1,4 @@
-2026-02-17 11:26:40 - INFO - This is a info message
-2026-02-17 11:26:40 - WARNING - This is a warning message
-2026-02-17 11:26:40 - ERROR - Error
-2026-02-17 11:26:40 - CRITICAL - This is critical message
-INFO - This is a info message - 2026-02-17 11:27:18
-WARNING - This is a warning message - 2026-02-17 11:27:18
-ERROR - Error - 2026-02-17 11:27:18
-CRITICAL - This is critical message - 2026-02-17 11:27:18
+INFO - successful process site1.com - 2026-02-17 11:33:27
+INFO - successful process site2.com - 2026-02-17 11:33:27
+ERROR - Network error unknown-site.com: site is not available - 2026-02-17 11:33:27
+INFO - successful process site3.com - 2026-02-17 11:33:27
