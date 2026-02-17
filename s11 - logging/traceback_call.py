@@ -8,7 +8,7 @@ logging.basicConfig(
 )
 
 try:
-    result = 10 / 4
+    result = 10 / 0
     logging.info(f"calculation done {result}", exc_info=True)
 
 except Exception as e:
