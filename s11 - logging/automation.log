@@ -1,4 +1,2 @@
-INFO - successful process site1.com - 2026-02-17 11:33:27
-INFO - successful process site2.com - 2026-02-17 11:33:27
-ERROR - Network error unknown-site.com: site is not available - 2026-02-17 11:33:27
-INFO - successful process site3.com - 2026-02-17 11:33:27
+2026-02-17 11:39:33 - INFO - calculation done 2.5
+NoneType: None
