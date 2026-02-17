@@ -1,4 +1,8 @@
-2026-02-17 11:22:58 - INFO - Program started
-2026-02-17 11:22:58 - WARNING - connection lost
-2026-02-17 11:22:58 - ERROR - error ouccoured
-2026-02-17 11:22:58 - CRITICAL - Critical system damage
+2026-02-17 11:26:40 - INFO - This is a info message
+2026-02-17 11:26:40 - WARNING - This is a warning message
+2026-02-17 11:26:40 - ERROR - Error
+2026-02-17 11:26:40 - CRITICAL - This is critical message
+INFO - This is a info message - 2026-02-17 11:27:18
+WARNING - This is a warning message - 2026-02-17 11:27:18
+ERROR - Error - 2026-02-17 11:27:18
+CRITICAL - This is critical message - 2026-02-17 11:27:18
