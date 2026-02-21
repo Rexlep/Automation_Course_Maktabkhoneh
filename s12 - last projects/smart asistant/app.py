@@ -16,12 +16,13 @@ def dashboard():
     html = """
     <h1>Smart ticket dashboard</h1>
         <table border="1">
-            <tr><th>Sender</th><th>Subject</th><th>Sentiment status</th></tr>
+            <tr><th>Sender</th><th>Subject</th><th>Content</th><ht>Sentiment status</th></tr>
             {% for  t in tickets %}
             <tr>
                 <td>{{t[1]}}</td>
                 <td>{{t[2]}}</td>
                 <td>{{t[3]}}</td>
+                <td>{{t[4]}}</td>
             </tr>
             
             {% endfor %}
