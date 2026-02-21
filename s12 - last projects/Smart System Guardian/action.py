@@ -4,7 +4,7 @@ import datetime
 
 
 def take_alert_screenshot():
-    timestamp = datetime.datetime.now().strftime("%Y%m%d - %H:%M:%S")
+    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
     filename = f"alert_screenshot_{timestamp}.png"
 
     pyautogui.screenshot(filename)
