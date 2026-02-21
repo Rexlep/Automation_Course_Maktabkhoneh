@@ -10,7 +10,7 @@ def init_db():
                         sender  TEXT,
                         subject TEXT,
                         content TEXT,
-                        sentiment TEXT
+                        sentiment TEXT)
     """)
 
     conn.commit()

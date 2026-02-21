@@ -9,8 +9,16 @@ classifier = pipeline(
 
 
 def analyze_ticket(text):
-    result = classifier(text)[0]
-    label = result['label']
+
+    max_len = 400
+    chunks = [text[i:i+max_len] for i in range(0, len(text), max_len)]
+
+    results = []
+    for chunk in chunks:
+        r = classifier(chunk, truncation=True)[0]
+        results.append(r['label'])
+
+    final_label = max(set(results), key=results.count)
 
     mapping = {
         '1 star': "CRITICAL (خیلی عصبانی)",
@@ -20,6 +28,4 @@ def analyze_ticket(text):
         '5 stars': "POSITIVE (رضایت‌بخش)"
     }
 
-    return mapping.get(label, "UNKNOWN")
-
-print(analyze_ticket("love"))
+    return mapping.get(final_label, "UNKNOWN")
