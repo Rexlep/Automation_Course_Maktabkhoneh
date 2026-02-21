@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="crm_system.db" uuid="d164e473-8430-40d0-bf9e-94ac4121bfc2">
+    <data-source source="LOCAL" name="market_watcher.db" uuid="1b2f64db-7a9a-47ac-a79c-99d101b8e1bc">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/s12 - last projects/smart asistant/crm_system.db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/s12 - last projects/book crawler/market_watcher.db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

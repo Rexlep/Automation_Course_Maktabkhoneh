@@ -7,7 +7,7 @@ def create_database():
 
     cursor.execute("""
         CREATE TABLE IF NOT EXISTS books (
-            id INTEGER PRIMARY KEY AUTOINCREAMENT,
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
             title TEXT,
             price REAL,
             availability TEXT,
