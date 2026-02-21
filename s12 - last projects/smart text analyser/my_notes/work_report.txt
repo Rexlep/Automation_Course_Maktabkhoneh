@@ -1,0 +1,4 @@
+The quarterly project meeting was held today. We discussed the new software 
+            architecture and decided to migrate our servers to AWS. The deadline for 
+            the first prototype is next Friday. All team members must submit their 
+            progress reports by Wednesday evening.
